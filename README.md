@@ -294,9 +294,17 @@ verified:
 
 ## Deviations from Base Specs
 
-Currently **none**. All content follows OKF v0.2 and LLM Wiki patterns as-is.
+Customizations beyond the vanilla llm-wiki and OKF stacks are listed here.
+### Bundle Import Workflow Extension
 
-Any future modifications should be documented in `specs/index.md` under "Custom Deviations."
+- **Date Introduced**: 2026-10-02
+- **Modified Spec**: OKF v0.2 (§3 Bundle Structure) + LLM Wiki (Ingest Workflow)
+- **Summary**: Formalized bundle lifecycle management with acceptance/rejection tracking, namespace isolation, and audit trails.
+- **Rationale**: Base OKF v0.2 defines bundles but leaves import workflow unspecified; LLM Wiki focuses on raw sources, not bundle validation.
+- **Implementation**: Added `bundles/` directory with `requests/`, `accepted/`, `rejected/` subdirectories; new templates for acceptance/rejection records; updated `AGENTS.md` with bundle-specific workflow logic.
+- **Last Reviewed**: 2026-10-01
+
+This and any future modifications should be documented in `specs/index.md` under "Custom Deviations."
 
 ---
 
