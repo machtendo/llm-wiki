@@ -323,7 +323,6 @@ This and any future modifications should be documented in `specs/index.md` under
 
 - **Specs:** LLM Wiki (Andrej Karpathy) & OKF v0.2 (GoogleCloudPlatform)
 - **Workspace:** Human-curated, agent-maintained
-- **Maintained by:** human:(name)
 - **Last Updated:** 2026-10-01
 
 ---
